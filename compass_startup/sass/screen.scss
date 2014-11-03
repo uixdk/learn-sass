@@ -4,3 +4,21 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+@import "compass/css3";
+
+.button{
+  @include border-radius(5px);
+}
+
+.section{
+  @include border-corner-radius(top,left, 5px);
+}
+
+.opacity{
+  @include opacity(.5);
+}
+
+.inline-block{
+  @include inline-block;
+}
