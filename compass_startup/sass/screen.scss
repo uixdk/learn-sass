@@ -22,3 +22,35 @@
 .inline-block{
   @include inline-block;
 }
+
+@import "compass/layout";
+
+
+@include sticky-footer(54px);
+
+
+.stretch{
+  @include stretch;
+}
+
+
+@import "compass/typography";
+a{
+  @include link-colors(#00c, #0c0, #c00, #0c0, #cc0);
+}
+
+@import "compass/utilities";
+.clearfix{
+  @include clearfix;
+}
+
+table{
+  @include table-scaffolding;
+}
+
+@import "compass";
+
+.icon{
+  backgorund-image: inline-image("icon.png");
+}
+
